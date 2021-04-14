@@ -7,11 +7,11 @@ var foodObj;
 var gameState,readState;
 
 function preload(){
-sadDog=loadImage("Images/Dog.png");
-happyDog=loadImage("Images/happyDog.png");
-garden=loadImage("Images/Garden.png");
-washroom=loadImage("Images/WashRoom.png");
-bedroom=loadImage("Images/BedRoom.png");
+sadDog=loadImage("images/Dog.png");
+happyDog=loadImage("images/happyDog.png");
+garden=loadImage("images/Garden.png");
+washroom=loadImage("images/WashRoom.png");
+bedroom=loadImage("images/BedRoom.png");
 }
 
 function setup() {
@@ -49,7 +49,7 @@ function setup() {
 
 function draw() {
   currentTime=hour();
-  if(currentTime==(lastFed+1)){
+  if(currentTime==(lastFed+2)){
       update("Playing");
       foodObj.garden();
    }else if(currentTime==(lastFed+2)){
